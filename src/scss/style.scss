@@ -1,0 +1,499 @@
+@import "./utils/variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    cursor: none;
+}
+.App{
+    background-color:$interColor;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    overflow:hidden;
+  //  height: 300vh;
+}
+.Home{
+    background-color:$interColor;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    width: 100vw;
+    &__Button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 120px;
+        width: 120px;
+        background-color: $clearColor;
+        color: $interColor;
+        border-radius: 100px;
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        font-family:'Aouar';
+        font-weight: 900;
+        font-size: 24px;
+        z-index: 10;
+    }
+    h1{
+        font-family: 'dharma-gothic-e';
+        font-size: 138px;
+        font-weight: 900;
+        -webkit-text-stroke: 5px $clearColor;
+        letter-spacing: 5px;
+        color: $clearColor;
+        span{
+            font-family: Aouar;
+            -webkit-text-stroke: none;
+            font-weight: 100;
+            color: $interColor;
+        }
+    }
+    &__name{
+        font-size: 280px;
+    }
+    .grow{
+        transition: 500ms;
+    }
+}
+
+.Cursor{
+    #cursor{
+        position: fixed;
+        z-index: 99;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+        will-change: transform;
+        
+    }
+    .cursor__circle {
+        width: 64px;
+        height: 64px;
+        margin-top: -50%;
+        margin-left: -50%;
+        border-radius: 50%;
+        border: solid 2px $clearColor;
+        transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+        background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+        border-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+        width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+        height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-family: poppins;
+            font-size: 18px;
+            text-transform: uppercase;
+            display: none;
+            transform: rotate(10deg);
+            font-weight: 900;
+            span{
+                font-family: Aouar;
+                font-weight: 900;
+            }
+        }
+    }
+    .hover{
+        width: 96px;
+        height: 96px;
+        background-color: $interColor;
+        opacity: 0.36;
+        border: none;
+        mix-blend-mode: difference;
+    }
+    .hoverMenu{
+        width: 126px;
+        height: 126px;
+        background-color: $interColor;
+        color: $clearColor;
+    }
+}
+.Animation{
+    height: 100%;
+    position: absolute;
+    top:0;
+    overflow: hidden;
+    &__text{
+        div{
+            font-family: poppins;
+            font-size: 220px;
+            background-color:$interColor;
+            white-space: nowrap;
+            color: $clearColor;
+            font-weight: 900;
+            text-transform: uppercase;
+            border: solid 4px $clearColor;
+            &:nth-child(1){
+                transform:  translateY(-50px) translateX(-8000px);
+                z-index: -1;
+                transition: 2s;
+            }
+            &:nth-child(2){
+                transform: rotate(3deg) translateY(-110px) translateX(8000px);
+                z-index: -3;
+                transition: 2s;
+            }
+            &:nth-child(3){
+                transform:  rotate(340deg) translateY(0) translateX(-8000px);
+                z-index: -5;
+                transition: 2s;
+            }
+            &:nth-child(4){
+                transform: rotate(3deg)  translateY(-515px) translateX(8000px);
+                z-index: -4;
+                transition: 2s;
+            }
+            &:nth-child(5){
+                transform: rotate(35deg) translateY(-700px) translateX(-8000px);
+                z-index: -2;
+                transition: 2s;
+            }
+            span{
+                span{
+                    font-family: 'Aouar';
+                }
+            }
+        }
+    }
+    .animWork1{
+        transform: translateY(-50px) translateX(-200px) !important;
+    }
+    .animWork2{
+        transform: rotate(3deg) translateY(-110px) translateX(200px) !important;
+    }
+    .animWork3{
+        transform:  rotate(340deg) translateY(-150px) translateX(-200px) !important;
+    }
+    .animWork4{
+        transform:rotate(3deg)  translateY(-515px) translateX(-200px) !important;
+    }
+    .animWork5{
+        transform: rotate(35deg) translateY(-700px) translateX(-200px) !important;
+    }
+}
+.Presentation{
+    background-color: $interColor;
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    &__picture{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+    &__cadre{
+        height: 525px;
+        width: 410px;
+        overflow: hidden !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        img{
+            width: 180%;
+        }
+    }
+    &__surText{
+        font-family: 'poppins';
+        font-size: 98px;
+        font-weight: 900;
+        line-height: 110px;
+        -webkit-text-stroke: 2px $punchColor;
+        letter-spacing: 2px;
+        color: transparent;
+        text-transform: uppercase;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        text-align: center;
+        span{
+            font-family: Aouar;
+            color: $punchColor;
+            font-weight: 100;
+        }
+    }
+    &__tech{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        p{
+        position: absolute;
+        bottom: 0;
+        font-family: 'poppins';
+        font-size: 168px;
+        font-weight: 900;
+        line-height: 200px;
+        color: $punchColor;
+        opacity: 0;
+        padding: 0 7%;
+            span{
+                -webkit-text-stroke: 2px $punchColor;
+                color: transparent;
+            }
+        }
+    }
+    &__projects{
+        height: 50vh;
+        position: relative;
+        overflow: hidden;
+        .square{
+            height: 2200px;
+            width: 2200px;
+            background-color: $punchColor;
+            position: absolute;
+            bottom: -1880px;
+            left: 50%;
+            transform: rotate(-10deg) translate(-50%,0);
+        }
+        .square2{
+            height: 2200px;
+            width: 2200px;
+            background-color: $punchColor;
+            position: absolute;
+            bottom: 500px;
+            left: 50%;
+            transform: rotate(-10deg) translate(-50%,0);
+        }
+        img{
+            position: absolute;
+            height: 250px;
+            bottom: 400px;
+            left: 50%;
+            transform: translate(-50%,0);
+           }
+    }
+    &__colorTransition{
+        height: 100vh;
+        background-color: $punchColor;
+        display: flex;
+        align-items: center;
+        span{
+            font-family: Aouar;
+            font-weight: 100;
+        }
+        .menu{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-family: poppins;
+            font-size: 98px;
+            color: $clearColor;
+            width: 100%;
+            ul{
+                text-align: start;
+                li{
+                    -webkit-text-stroke: 2px $clearColor;
+                    color: transparent;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    &:hover{
+                        color: $clearColor;
+                        -webkit-text-stroke: none;
+                    }
+                }
+                
+            }
+            h2{
+                text-transform: uppercase;
+                font-weight: 900;
+            }
+        }
+    }
+    &__project{
+        width: 100vw;
+        height: 100vh;
+    }
+}
+.Paranoid, .Axioma, .Flamingod, .Aubrac{
+    width: 100vw;
+    height: 100vh;
+    &__display__text{
+        width: 50%;
+        text-align: start;
+        padding: 0 0 0 7%;
+        h1{
+            font-family: poppins;
+            font-size: 98px;
+            color: transparent;
+            -webkit-text-stroke: 2px $clearColor;
+            text-transform: uppercase;
+            font-weight: 900;
+            line-height: 90px;
+        }  
+        h2{
+            font-family: poppins;
+            font-size: 68px;
+            color: $clearColor;
+            text-transform: uppercase;
+            font-weight: 900;
+            line-height: 70px;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+    }
+    &__display{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .macParano{
+        position: relative;
+        height: 100%;
+        width: 50%;
+        img{
+            position: absolute;
+            transform: rotate(-7deg) ;
+            bottom: 20%;
+            right: -150px;
+            height: 600px;
+            z-index: 2;
+        }
+        .circle{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            background-color: $punchColor;
+            border-radius: 300px;
+            top: 100px;
+        }
+    }
+    .separator{
+        width: 520px;
+        height: 4px;
+        background-color: $punchColor;
+        margin-bottom: 50px;
+        text-align: end;
+    }
+}
+.Axioma, .Aubrac{
+    &__display__text{
+        width: 50%;
+        text-align: end;
+        padding: 0 7% 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .macAxioma, .macAubrac{
+        position: relative;
+        height: 100%;
+        width: 50%;
+        img{
+            position: absolute;
+            transform: rotate(7deg) ;
+            bottom: 20%;
+            left: -300px;
+            height: 600px;
+            z-index: 2;
+        }
+        .circle{
+            position: absolute;
+            height: 180px;
+            width: 180px;
+            background-color: $punchColor;
+            border-radius: 300px;
+            bottom: 50px;
+            right: 50px;
+        }
+    }
+    .macAubrac{
+        img{
+            transform: rotate(-7deg) ;
+        }
+        .circle{
+            height: 240px;
+            width: 240px;
+            top: 50px;
+            right: 50px;
+        }
+    }
+}
+.Flamingod{
+    .macFlamingod{
+        position: relative;
+        height: 100%;
+        width: 50%;
+        img{
+            position: absolute;
+            bottom: 20%;
+            right: -300px;
+            height: 600px;
+            z-index: 2;
+        }
+        .circle{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            background-color: $punchColor;
+            border-radius: 300px;
+            bottom: 350px;
+            left: 50px;
+        }
+    }
+}
+.hidden{
+    display: none;
+}
+.indexMajor{
+    z-index: 100;
+}
+.Footer{
+    height: 100vh;
+    background-color: $interColor;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 7%;
+    .gifSection{
+        font-family: poppins;
+        font-size: 98px;
+        text-transform: uppercase;
+        color: $clearColor;
+        line-height: 104px;
+        span{
+            -webkit-text-stroke: 2px $clearColor;
+            color: transparent;
+            font-size: 128px;
+        }
+    }
+    nav{
+        font-size: 78px;
+        font-family: poppins;
+        font-weight: 900;
+        text-align: start;
+        a{
+            text-decoration: none;
+            color: $clearColor;
+        }
+        ul{
+            list-style: none;
+        }
+    }
+}
+img{
+    -webkit-filter: grayscale(100%);
+}
+img:hover{
+    -webkit-filter: grayscale(0%); 
+    transition: 1s;
+}
