@@ -211,7 +211,7 @@
     overflow: hidden; }
     .Presentation__projects .square {
       height: 2200px;
-      width: 2200px;
+      width: 150%;
       background-color: #FF0031;
       position: absolute;
       bottom: -1880px;
