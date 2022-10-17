@@ -1,9 +1,12 @@
 @import "./utils/variables";
-@font-face {
-    font-family: ""Aouar"";
-    src: url("../assets/fonts/"Aouar".ttf") format("ttf")
-}
 
+@font-face {
+    font-family: "Aouar";
+    src: url("Aouar.ttf");
+}
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -44,7 +47,7 @@
         position: absolute;
         bottom: 40px;
         right: 40px;
-        font-family:"Aouar";
+        font-family:'Aouar';
         font-weight: 900;
         font-size: 24px;
         z-index: 10;
@@ -57,7 +60,7 @@
         letter-spacing: 5px;
         color: $clearColor;
         span{
-            font-family: "Aouar";
+            font-family: Aouar;
             -webkit-text-stroke: none;
             font-weight: 100;
             color: $interColor;
@@ -104,7 +107,7 @@
             transform: rotate(10deg);
             font-weight: 900;
             span{
-                font-family: "Aouar";
+                font-family: Aouar;
                 font-weight: 900;
             }
         }
@@ -166,7 +169,7 @@
             }
             span{
                 span{
-                    font-family: "Aouar";
+                    font-family: 'Aouar';
                 }
             }
         }
@@ -226,7 +229,7 @@
         bottom: 0;
         text-align: center;
         span{
-            font-family: "Aouar";
+            font-family: Aouar;
             color: $punchColor;
             font-weight: 100;
         }
@@ -254,13 +257,53 @@
             }
         }
     }
+    &__profil{
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 7% 0;
+        .rowl{
+            font-family: poppins;
+            font-size: 200px;
+            background-color:$interColor;
+            white-space: nowrap;
+            color: $punchColor;
+            font-weight: 900;
+            text-transform: uppercase;
+            border: solid 4px $punchColor;
+            
+        }
+        .rowl1{
+            transform: rotate(-7deg) translateY(500px) translateX(4500px);
+
+        }
+        .rowl2{
+            transform: rotate(7deg) translateY(400px) translateX(-3500px);
+        }
+        &__text{
+            width: 100%;
+            height: 60%;
+            background-color: $punchColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+                font-family: poppins;
+                font-size: 64px;
+                font-weight: 700;
+                color: $clearColor;
+            }
+        }
+    }
     &__projects{
         height: 50vh;
         position: relative;
         overflow: hidden;
         .square{
             height: 2200px;
-            width: 150%;
+            width: 2200px;
             background-color: $punchColor;
             position: absolute;
             bottom: -1880px;
@@ -290,7 +333,7 @@
         display: flex;
         align-items: center;
         span{
-            font-family: "Aouar";
+            font-family: Aouar;
             font-weight: 100;
         }
         .menu{
@@ -478,6 +521,7 @@
             -webkit-text-stroke: 2px $clearColor;
             color: transparent;
             font-size: 128px;
+            
         }
     }
     nav{
@@ -491,6 +535,10 @@
         }
         ul{
             list-style: none;
+            li:hover{
+                -webkit-text-stroke: 2px $clearColor;
+                color: transparent;
+            }
         }
     }
 }
@@ -501,3 +549,8 @@ img:hover{
     -webkit-filter: grayscale(0%); 
     transition: 1s;
 }
+a{
+    text-decoration: none;
+}
+
+    

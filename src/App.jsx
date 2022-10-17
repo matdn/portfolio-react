@@ -69,8 +69,7 @@ function App() {
         gsap.to(".ReactVue",{
             scrollTrigger: {
               trigger: ".ReactVue",
-              start: "0 80%",
-              
+              start: "-200px 100%",
               toggleActions: "restart",
             },
             y : -600,
@@ -80,8 +79,7 @@ function App() {
         gsap.to(".GsapThree",{
           scrollTrigger: {
             trigger: ".ReactVue",
-            start: "0 80%",
-           
+            start: "-200px 100%",
             toggleActions: "restart",
           },
           y : -400,
@@ -92,7 +90,7 @@ function App() {
       gsap.to(".PhpMysql",{
         scrollTrigger: {
           trigger: ".ReactVue",
-          start: "0 80%",
+          start: "-200px 100%",
           toggleActions: "restart",
         },
         y : -200,
@@ -103,7 +101,7 @@ function App() {
     gsap.to(".XdFigma",{
       scrollTrigger: {
         trigger: ".ReactVue",
-        start: "0 80%",
+        start: "-200px 100%",
         toggleActions: "restart",
       },
       y : 0,
@@ -124,11 +122,26 @@ function App() {
     scrollTrigger: {
       trigger: ".Presentation__colorTransition",
       start: "20% top",
-      toggleActions: "restart",
       scrub:1
     },
     rotation : 8,
-})
+  })
+  gsap.to(".rowl1",{
+    scrollTrigger: {
+      trigger: ".Presentation__profil",
+      start: "top center",
+      scrub:1
+    },
+    x : -2000
+  })
+  gsap.to(".rowl2",{
+    scrollTrigger: {
+      trigger: ".Presentation__profil",
+      start: "top 400px",
+      scrub:1
+    },
+    x : 2000
+  })
         
   }
     const mouse = { x: -100, y: -100 }; 

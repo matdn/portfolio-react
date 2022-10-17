@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Aouar";
+  src: url("Aouar.ttf"); }
+html {
+  scroll-behavior: smooth; }
+
 * {
   margin: 0;
   padding: 0;
@@ -205,13 +211,45 @@
       .Presentation__tech p span {
         -webkit-text-stroke: 2px #FF0031;
         color: transparent; }
+  .Presentation__profil {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7% 0; }
+    .Presentation__profil .rowl {
+      font-family: poppins;
+      font-size: 200px;
+      background-color: #9CC9BE;
+      white-space: nowrap;
+      color: #FF0031;
+      font-weight: 900;
+      text-transform: uppercase;
+      border: solid 4px #FF0031; }
+    .Presentation__profil .rowl1 {
+      transform: rotate(-7deg) translateY(500px) translateX(4500px); }
+    .Presentation__profil .rowl2 {
+      transform: rotate(7deg) translateY(400px) translateX(-3500px); }
+    .Presentation__profil__text {
+      width: 100%;
+      height: 60%;
+      background-color: #FF0031;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .Presentation__profil__text p {
+        font-family: poppins;
+        font-size: 64px;
+        font-weight: 700;
+        color: #FCF5D7; }
   .Presentation__projects {
     height: 50vh;
     position: relative;
     overflow: hidden; }
     .Presentation__projects .square {
       height: 2200px;
-      width: 150%;
+      width: 2200px;
       background-color: #FF0031;
       position: absolute;
       bottom: -1880px;
@@ -405,6 +443,9 @@
       color: #FCF5D7; }
     .Footer nav ul {
       list-style: none; }
+      .Footer nav ul li:hover {
+        -webkit-text-stroke: 2px #FCF5D7;
+        color: transparent; }
 
 img {
   -webkit-filter: grayscale(100%); }
@@ -412,5 +453,8 @@ img {
 img:hover {
   -webkit-filter: grayscale(0%);
   transition: 1s; }
+
+a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

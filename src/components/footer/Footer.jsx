@@ -7,9 +7,9 @@ const Footer = () => {
             {/* <h1>Je recherche une alterance <span>and</span> I'm ready to work !</h1> */}
            <nav>
                 <ul>
-                   <a href=""><li>Git</li></a> 
-                   <a href=""><li>Linkedin</li></a> 
-                   <a href=""><li><span>Mon CV</span></li></a> 
+                   <a href="https://github.com/matdn"><li>Git</li></a> 
+                   <a href="https://www.linkedin.com/in/matis-dene/"><li>Linkedin</li></a> 
+                   <a href="../../pdf/CV.pdf"><li><span>Mon CV</span></li></a> 
                 </ul>
            </nav>
           <div className="gifSection">
