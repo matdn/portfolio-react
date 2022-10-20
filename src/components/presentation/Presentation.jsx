@@ -1,13 +1,13 @@
 import React from 'react'
 import '../../style.css';
 import {useEffect} from "react";
-import Profil from '../../assets/pictures/bretagnePicture.png'
+import Profil from '../../assets/pictures/alpes.png'
 import Footer from "../footer/Footer";
 import Paranoid from "../projects/Paranoid";
 import Axioma from "../projects/Axioma";
 import Flamingod from "../projects/Flamingod";
 import Aubrac from "../projects/Aubrac";
-
+import Dtext from "../3dtext/3Dtext"
 const Presentation = () => {
     useEffect(() => {
         
@@ -29,6 +29,7 @@ const Presentation = () => {
                 </div>
                 <div className='rowl rowl2'>
                     <span> &nbsp;En fr<span>o</span>ntend créatif -&nbsp;</span> 
+                    <span> &nbsp;En fr<span>o</span>ntend créatif &nbsp;</span> 
                     <span> &nbsp;En fr<span>o</span>ntend créatif &nbsp;</span> 
                 </div>
                 {/* <div className='rowl rowl2'>
@@ -66,6 +67,9 @@ const Presentation = () => {
             </div>
             <div id="Axioma" className="Presentation__project">
                <Axioma/>
+            </div>
+            <div className='Presentation__3Dtext'>
+                <Dtext/>
             </div>
             <div id="FlaminGod" className="Presentation__project">
                <Flamingod/>
