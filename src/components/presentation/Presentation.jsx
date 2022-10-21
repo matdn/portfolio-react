@@ -9,11 +9,8 @@ import Flamingod from "../projects/Flamingod";
 import Aubrac from "../projects/Aubrac";
 import Dtext from "../3dtext/3Dtext"
 const Presentation = () => {
-    useEffect(() => {
-        
-    })
     return (
-        <section className="Presentation hidden">
+        <section className="Presentation hidden" id="home">
             <div className="Presentation__picture">
                 <div className='Presentation__cadre'>
                     <img src={Profil} alt="Profil picture"/>
@@ -47,7 +44,7 @@ const Presentation = () => {
                 <div className="square"></div>
             </div>
             <div className="Presentation__colorTransition">
-                <div className='menu'>
+                <div className='menu' id="project">
                     <nav>
                         <ul>
                             <a href="#Paranoid"><li className="liMenu">P Broccoli</li></a> 

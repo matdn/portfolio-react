@@ -7,6 +7,7 @@
 }
 html{
     scroll-behavior: smooth;
+    background-color: $clearColor;
 }
 *{
     margin: 0;
@@ -22,8 +23,7 @@ html{
     flex-direction: column;
     text-align: center;
     position: relative;
-    overflow:hidden;
-  //  height: 300vh;
+    overflow:hidden !important;
 }
 .Home{
     background-color:$interColor;
@@ -193,11 +193,32 @@ html{
         transform: rotate(35deg) translateY(-700px) translateX(-200px) !important;
     }
 }
+.burger{
+    font-size: 18px;
+    font-family: poppins;
+    color: $clearColor;
+    display: flex;
+    background-color: $interColor;
+    border: solid 2px $clearColor;
+    border-top: none;
+    padding: 22px 60px;
+    transform: rotate(90deg);
+    right: -11%;
+    position: fixed;
+    z-index: 50;
+    gap: 30px;
+    top: 50%;
+    transition: 500ms;
+    a{
+        color: $clearColor;
+    }
+}
 .Presentation{
     background-color: $interColor;
     height: auto;
     width: 100vw;
     overflow-x: hidden;
+     
     &__picture{
         display: flex;
         justify-content: center;
@@ -310,7 +331,7 @@ html{
             width: 2600px;
             background-color: $clearColor;
             position: absolute;
-            bottom: -2080px;
+            bottom: -2180px;
             left: 50%;
             transform: rotate(-10deg) translate(-50%,0);
         }

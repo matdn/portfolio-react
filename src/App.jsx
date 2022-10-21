@@ -8,7 +8,6 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import {useEffect} from "react";
 function App() {
   useEffect(() => {
-    
     const App = document.querySelector('.App');
     const Home = document.querySelector('.Home');
     const Animation = document.querySelector('.Animation');
@@ -17,7 +16,8 @@ function App() {
     const cursor = document.querySelector('#cursor');
     const cursorCircle = cursor.querySelector('.cursor__circle');
     const button = document.querySelector('.Home__Button');
-   
+    const burger = document.querySelector('.burger');
+    const Presentation__colorTransition = document.querySelector(".Presentation__colorTransition")
     const rowl1 = document.querySelector('.rowl1');
     const rowl2 = document.querySelector('.rowl2');
     const rowl3 = document.querySelector('.rowl3');
@@ -25,7 +25,7 @@ function App() {
     const rowl5 = document.querySelector('.rowl5');
 
     button.addEventListener('click', function(){
-        rowl1.classList.add('animWork1');
+      rowl1.classList.add('animWork1');
         rowl2.classList.add('animWork2');
         rowl3.classList.add('animWork3');
         rowl4.classList.add('animWork4');
@@ -43,6 +43,7 @@ function App() {
     function rowlBack(){
         Home.classList.add('hidden');
         Presentation.classList.remove('hidden');
+        burger.classList.remove('hidden');
         rowl1.classList.remove('animWork1');
         rowl2.classList.remove('animWork2');
         rowl3.classList.remove('animWork3');
@@ -268,7 +269,6 @@ function App() {
     },
     rotateX: -90
   })
-  
   }
     const mouse = { x: -100, y: -100 }; 
     const pos = { x: 0, y: 0 }; 
@@ -339,26 +339,31 @@ function App() {
           cursorCircle.classList.remove("hoverMenu");
       })
     })
-
-  //   const Paranoid = document.querySelector('.Paranoid');
-  //   gsap.to("#circle1",{
-  //     scrollTrigger: {
-  //       trigger: ".Paranoid",
-  //       start: "20% top",
-  //       toggleActions: "restart",
-  //       scrub:1,
-  //       markers : "true"
-  //     },
-  //     y : 700,
-  // })
-   
+    Presentation__colorTransition.addEventListener("mouseover", function(){
+          cursorCircle.style.borderColor = "#F4DECF"
+    })
+    Presentation__colorTransition.addEventListener("mouseout", function(){
+      cursorCircle.style.borderColor = "#16005b"
+    })
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        const currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            burger.style.right = "-11%";
+        } else {
+            burger.style.right = "-16%";
+        }
+        prevScrollpos = currentScrollPos;
+    }
 });
-
-
-
 
   return (
     <section className="App">
+        <div className='burger hidden'>
+          <a href="#contact"><h2>contact</h2></a>
+          <a href="#project"><h2>project</h2></a>
+          <a href="#home"><h2>home</h2></a>
+        </div>
       <Animation/>
       <Home/>
       <Presentation/>

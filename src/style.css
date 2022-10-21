@@ -2,7 +2,8 @@
   font-family: "Aouar";
   src: url("Aouar.ttf"); }
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  background-color: #16005b; }
 
 * {
   margin: 0;
@@ -18,7 +19,7 @@ html {
   flex-direction: column;
   text-align: center;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden !important; }
 
 .Home {
   background-color: #F4DECF;
@@ -153,6 +154,25 @@ html {
   .Animation .animWork5 {
     transform: rotate(35deg) translateY(-700px) translateX(-200px) !important; }
 
+.burger {
+  font-size: 18px;
+  font-family: poppins;
+  color: #16005b;
+  display: flex;
+  background-color: #F4DECF;
+  border: solid 2px #16005b;
+  border-top: none;
+  padding: 22px 60px;
+  transform: rotate(90deg);
+  right: -11%;
+  position: fixed;
+  z-index: 50;
+  gap: 30px;
+  top: 50%;
+  transition: 500ms; }
+  .burger a {
+    color: #16005b; }
+
 .Presentation {
   background-color: #F4DECF;
   height: auto;
@@ -254,7 +274,7 @@ html {
       width: 2600px;
       background-color: #16005b;
       position: absolute;
-      bottom: -2080px;
+      bottom: -2180px;
       left: 50%;
       transform: rotate(-10deg) translate(-50%, 0); }
     .Presentation__projects .square2 {
