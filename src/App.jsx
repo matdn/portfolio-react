@@ -174,7 +174,7 @@ function App() {
     scrollTrigger: {
       trigger: ".Dtext",
       start: "top 60",
-      end: '+=300',
+      end: '+=400',
       scrub:1
     },
     rotateX: -90
@@ -183,7 +183,7 @@ function App() {
     scrollTrigger: {
       trigger: ".Dtext",
       start: "top 80",
-      end: '+=300',
+      end: '+=500',
       scrub:1,
     },
     rotateX: -90
@@ -192,7 +192,7 @@ function App() {
     scrollTrigger: {
       trigger: ".Dtext",
       start: "top 100",
-      end: '+=300',
+      end: '+=500',
       scrub:1
     },
     rotateX: -90
@@ -201,7 +201,7 @@ function App() {
     scrollTrigger: {
       trigger: ".Dtext",
       start: "top 20",
-      end: '+=300',
+      end: '+=500',
       scrub:1
     },
     rotateX: -90
@@ -210,7 +210,7 @@ function App() {
     scrollTrigger: {
       trigger: ".Dtext",
       start: "top 40",
-      end: '+=300',
+      end: '+=500',
       scrub:1
     },
     rotateX: -90
@@ -219,7 +219,7 @@ function App() {
     scrollTrigger: {
       trigger: ".Dtext",
       start: "top 60",
-      end: '+=300',
+      end: '+=500',
       scrub:1
     },
     rotateX: -90
@@ -349,9 +349,9 @@ function App() {
     window.onscroll = function() {
         const currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
-            burger.style.right = "-11%";
+            burger.style.right = "-13%";
         } else {
-            burger.style.right = "-16%";
+            burger.style.right = "-18%";
         }
         prevScrollpos = currentScrollPos;
     }
