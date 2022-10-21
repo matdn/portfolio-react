@@ -1,56 +1,10 @@
 import React from 'react'
 import '../../style.css'
-import {useEffect} from "react";
+
+
 const Dtext = () => {
-    useEffect(() => {
-            let about = document.querySelector('#about') 
-            let btnFlip1 = document.querySelector('.btn__flip1')
-            let btnFlip2 = document.querySelector('.btn__flip2')
-            let btnFlip3 = document.querySelector('.btn__flip3')
-            let btnFlip4 = document.querySelector('.btn__flip4')
-            let btnFlip5 = document.querySelector('.btn__flip5')
-            let btnFlip6 = document.querySelector('.btn__flip6')
-            let btnFlip7 = document.querySelector('.btn__flip7')
-            let btnFlip8 = document.querySelector('.btn__flip8')
-            let btnFlip9 = document.querySelector('.btn__flip9')
-            let btnFlip10 = document.querySelector('.btn__flip10')
-            let btnFlip11 = document.querySelector('.btn__flip11')
-            let btnFlip12 = document.querySelector('.btn__flip12')
-            let btnFlip13 = document.querySelector('.btn__flip13')
-            let btnFlip14 = document.querySelector('.btn__flip14')
-        about.addEventListener('mouseover', function(){
-            btnFlip1.style.transform = 'rotateX(-90deg)'
-            btnFlip2.style.transform = 'rotateX(-90deg)'
-            btnFlip3.style.transform = 'rotateX(-90deg)'
-            btnFlip4.style.transform = 'rotateX(-90deg)'
-            btnFlip5.style.transform = 'rotateX(-90deg)'
-            btnFlip6.style.transform = 'rotateX(-90deg)'
-            btnFlip7.style.transform = 'rotateX(-90deg)'
-            btnFlip8.style.transform = 'rotateX(-90deg)'
-            btnFlip9.style.transform = 'rotateX(-90deg)'
-            btnFlip10.style.transform = 'rotateX(-90deg)'
-            btnFlip11.style.transform = 'rotateX(-90deg)'
-            btnFlip12.style.transform = 'rotateX(-90deg)'
-            btnFlip13.style.transform = 'rotateX(-90deg)'
-            btnFlip14.style.transform = 'rotateX(-90deg)'
-        })
-        about.addEventListener('mouseout', function(){
-        btnFlip1.style.transform = 'rotateX(0deg)'
-        btnFlip2.style.transform = 'rotateX(0deg)'
-        btnFlip3.style.transform = 'rotateX(0deg)'
-        btnFlip4.style.transform = 'rotateX(0deg)'
-        btnFlip5.style.transform = 'rotateX(0deg)'
-        btnFlip6.style.transform = 'rotateX(0deg)'
-        btnFlip7.style.transform = 'rotateX(0deg)'
-        btnFlip8.style.transform = 'rotateX(0deg)'
-        btnFlip9.style.transform = 'rotateX(0deg)'
-        btnFlip10.style.transform = 'rotateX(0deg)'
-        btnFlip11.style.transform = 'rotateX(0deg)'
-        btnFlip12.style.transform = 'rotateX(0deg)'
-        btnFlip13.style.transform = 'rotateX(0deg)'
-        btnFlip14.style.transform = 'rotateX(0deg)'
-        })
-    })
+   
+        
     return (
         <section className="Dtext">
             <div clasName="Dtext__recyclable">

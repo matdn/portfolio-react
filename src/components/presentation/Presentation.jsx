@@ -24,8 +24,8 @@ const Presentation = () => {
             </div>
             <div className='Presentation__profil'>
                 <div className='rowl rowl1'>
-                    <span> &nbsp; Je recherche une alternance -&nbsp;</span> 
-                    <span> &nbsp; Je recherche une alternance &nbsp;</span> 
+                    <span> &nbsp; - alternant - alternant - alternant&nbsp;</span> 
+                    <span> &nbsp; - alternant - alternant - alternant &nbsp;</span> 
                 </div>
                 <div className='rowl rowl2'>
                     <span> &nbsp;En fr<span>o</span>ntend créatif -&nbsp;</span> 

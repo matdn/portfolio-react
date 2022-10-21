@@ -142,7 +142,133 @@ function App() {
     },
     x : 2000
   })
-        
+  gsap.to(".btn__flip1",{
+    scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 0",
+      end: '+=300',
+      scrub:1,
+    },
+    rotateX: -90
+  })
+  gsap.to(".btn__flip2",{
+    scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 20",
+      end: '+=300',
+      scrub:1,
+    },
+    rotateX: -90
+  })
+  gsap.to(".btn__flip3",{
+    scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 40",
+      end: '+=300',
+      scrub:1,
+    },
+    rotateX: -90
+  })
+  gsap.to(".btn__flip4",{
+    scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 60",
+      end: '+=300',
+      scrub:1
+    },
+    rotateX: -90
+  })
+  gsap.to(".btn__flip5",{
+    scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 80",
+      end: '+=300',
+      scrub:1,
+    },
+    rotateX: -90
+  })
+  gsap.to(".btn__flip6",{
+    scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 100",
+      end: '+=300',
+      scrub:1
+    },
+    rotateX: -90
+  })
+  gsap.to(".btn__flip7",{
+    scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 20",
+      end: '+=300',
+      scrub:1
+    },
+    rotateX: -90
+  })
+  gsap.to(".btn__flip8",{
+    scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 40",
+      end: '+=300',
+      scrub:1
+    },
+    rotateX: -90
+  })
+  gsap.to(".btn__flip9",{
+    scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 60",
+      end: '+=300',
+      scrub:1
+    },
+    rotateX: -90
+  })
+  gsap.to(".btn__flip10",{
+    scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 80",
+      end: '+=300',
+      scrub:1
+    },
+    rotateX: -90
+  })
+  gsap.to(".btn__flip11",{
+    scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 100",
+      end: '+=300',
+      scrub:1
+    },
+    rotateX: -90
+  })
+  gsap.to(".btn__flip12",{
+    scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 120",
+      end: '+=300',
+      scrub:1
+    },
+    rotateX: -90
+  })
+  gsap.to(".btn__flip13",{
+    scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 140",
+      end: '+=300',
+      scrub:1
+    },
+    rotateX: -90
+  })
+  gsap.to(".btn__flip14",{
+    scrollTrigger: {
+      trigger: ".Dtext",
+      start: "top 160",
+      end: '+=300',
+      scrub:1
+    },
+    rotateX: -90
+  })
+  
   }
     const mouse = { x: -100, y: -100 }; 
     const pos = { x: 0, y: 0 }; 

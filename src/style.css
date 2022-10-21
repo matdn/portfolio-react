@@ -30,7 +30,7 @@ html {
   text-align: center;
   position: relative;
   width: 100vw; }
-  .Home__Button {
+  .Home .Home__Button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,9 +43,9 @@ html {
     position: absolute;
     bottom: 40px;
     right: 40px;
-    font-family: 'Aouar';
-    font-weight: 900;
-    font-size: 24px;
+    font-family: 'dharma-gothic-e';
+    font-weight: 700;
+    font-size: 28px;
     z-index: 10; }
   .Home h1 {
     font-family: 'dharma-gothic-e';
@@ -60,7 +60,7 @@ html {
       color: #F4DECF;
       text-transform: uppercase;
       -webkit-text-stroke: 2px #16005b; }
-  .Home__name {
+  .Home .Home__name {
     font-size: 280px; }
   .Home .grow {
     transition: 500ms; }
@@ -204,7 +204,7 @@ html {
       position: absolute;
       bottom: 0;
       font-family: 'poppins';
-      font-size: 168px;
+      font-size: 128px;
       font-weight: 900;
       line-height: 200px;
       color: #16005b;
@@ -250,16 +250,16 @@ html {
     position: relative;
     overflow: hidden; }
     .Presentation__projects .square {
-      height: 2200px;
-      width: 2200px;
+      height: 2600px;
+      width: 2600px;
       background-color: #16005b;
       position: absolute;
-      bottom: -1880px;
+      bottom: -2080px;
       left: 50%;
       transform: rotate(-10deg) translate(-50%, 0); }
     .Presentation__projects .square2 {
-      height: 2200px;
-      width: 2200px;
+      height: 2600px;
+      width: 2600px;
       background-color: #16005b;
       position: absolute;
       bottom: 500px;
@@ -343,7 +343,8 @@ html {
       transform: rotate(-7deg);
       bottom: 20%;
       right: -150px;
-      height: 600px;
+      height: auto;
+      width: 100%;
       z-index: 2; }
     .Paranoid .macParano .circle, .Axioma .macParano .circle, .Flamingod .macParano .circle, .Aubrac .macParano .circle {
       position: absolute;
@@ -375,7 +376,8 @@ html {
     transform: rotate(7deg);
     bottom: 20%;
     left: -300px;
-    height: 600px;
+    height: auto;
+    width: 120%;
     z-index: 2; }
   .Axioma .macAxioma .circle, .Axioma .macAubrac .circle, .Aubrac .macAxioma .circle, .Aubrac .macAubrac .circle {
     position: absolute;
@@ -386,7 +388,9 @@ html {
     bottom: 50px;
     right: 50px; }
 .Axioma .macAubrac img, .Aubrac .macAubrac img {
-  transform: rotate(-7deg); }
+  transform: rotate(-7deg);
+  height: auto;
+  width: 120%; }
 .Axioma .macAubrac .circle, .Aubrac .macAubrac .circle {
   height: 240px;
   width: 240px;
@@ -401,7 +405,8 @@ html {
     position: absolute;
     bottom: 20%;
     right: -300px;
-    height: 600px;
+    height: auto;
+    width: 120%;
     z-index: 2; }
   .Flamingod .macFlamingod .circle {
     position: absolute;
@@ -460,7 +465,7 @@ a {
   text-decoration: none; }
 
 .Dtext {
-  height: 100vh;
+  height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -476,7 +481,8 @@ a {
   background-color: #F4DECF; }
   .About3D div {
     display: flex;
-    gap: 45px; }
+    gap: 45px;
+    margin-bottom: 20px; }
   .About3D .btn3d {
     font-family: poppins;
     font-size: 105px;
@@ -492,7 +498,7 @@ a {
       align-items: center;
       transform-style: preserve-3d;
       transform-origin: center bottom 70px;
-      transition: transform 1s;
+      transition: transform;
       transform: rotateX(0deg);
       text-decoration: none; }
       .About3D .btn3d .btn__flip .btn__flip--off {
@@ -521,34 +527,6 @@ a {
         text-decoration: none;
         background-color: #F4DECF !important;
         font-weight: 900; }
-    .About3D .btn3d .btn__flip1 {
-      transition-delay: 100ms; }
-    .About3D .btn3d .btn__flip2 {
-      transition-delay: 200ms; }
-    .About3D .btn3d .btn__flip3 {
-      transition-delay: 300ms; }
-    .About3D .btn3d .btn__flip4 {
-      transition-delay: 400ms; }
-    .About3D .btn3d .btn__flip5 {
-      transition-delay: 500ms; }
-    .About3D .btn3d .btn__flip6 {
-      transition-delay: 600ms; }
-    .About3D .btn3d .btn__flip7 {
-      transition-delay: 700ms; }
-    .About3D .btn3d .btn__flip8 {
-      transition-delay: 800ms; }
-    .About3D .btn3d .btn__flip9 {
-      transition-delay: 900ms; }
-    .About3D .btn3d .btn__flip10 {
-      transition-delay: 1000ms; }
-    .About3D .btn3d .btn__flip11 {
-      transition-delay: 1100ms; }
-    .About3D .btn3d .btn__flip12 {
-      transition-delay: 1200ms; }
-    .About3D .btn3d .btn__flip13 {
-      transition-delay: 1300ms; }
-    .About3D .btn3d .btn__flip14 {
-      transition-delay: 1400ms; }
 
 .space {
   height: 100px; }
