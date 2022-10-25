@@ -15,7 +15,7 @@ const Paranoid = () => {
                     <h1>paranoid broccoli</h1>
                     <div className='separator'></div>
                     <h2>conception de l'univers</h2>
-                    <h2>charte graphique</h2>
+                    <h2><span>charte graphique</span></h2>
                     <h2>design des maquettes</h2>
                     
                 </div>

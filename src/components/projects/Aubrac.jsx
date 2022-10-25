@@ -19,7 +19,7 @@ const Aubrac = () => {
                     <h1>Aubrac</h1>
                     <div className='separator'></div>
                     <h2>Design des maquettes</h2>
-                    <h2>Intégration <br/>Avec React</h2>
+                    <h2><span>Intégration <br/>Avec React</span> </h2>
                     <h2>Debrief client</h2>
                     
                 </div>

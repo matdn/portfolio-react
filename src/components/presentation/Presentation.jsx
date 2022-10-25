@@ -25,9 +25,9 @@ const Presentation = () => {
                     <span> &nbsp; - alternant - alternant - alternant &nbsp;</span> 
                 </div>
                 <div className='rowl rowl2'>
-                    <span> &nbsp;En fr<span>o</span>ntend créatif -&nbsp;</span> 
-                    <span> &nbsp;En fr<span>o</span>ntend créatif &nbsp;</span> 
-                    <span> &nbsp;En fr<span>o</span>ntend créatif &nbsp;</span> 
+                    <span> &nbsp;En fr<span>o</span>ntend creatif -&nbsp;</span> 
+                    <span> &nbsp;En fr<span>o</span>ntend creatif &nbsp;</span> 
+                    <span> &nbsp;En fr<span>o</span>ntend creatif &nbsp;</span> 
                 </div>
                 {/* <div className='rowl rowl2'>
                     <span>- 3éme année de bachel<span>o</span>r "C<span>o</span>ding and Digital Inn<span>o</span>vati<span>o</span>n </span> 

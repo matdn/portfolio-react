@@ -19,7 +19,7 @@ const Axioma = () => {
                     <h1>Axioma</h1>
                     <div className='separator'></div>
                     <h2>Comprehension du besoin client</h2>
-                    <h2>Design des maquettes</h2>
+                    <h2><span>Design des maquettes</span></h2>
                     <h2>Integration wordpress</h2>
                 </div>
            </div>

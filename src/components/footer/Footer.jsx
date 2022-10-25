@@ -12,6 +12,7 @@ const Footer = () => {
                    <a href="../../pdf/CV.pdf"><li><span>Mon CV</span></li></a> 
                 </ul>
            </nav>
+           <div className='separator'></div>
           <div className="gifSection">
             <h1>Ready to <br/> <span>work !</span> </h1>
             <img src={Gif} alt="" />

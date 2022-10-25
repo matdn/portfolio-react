@@ -23,13 +23,15 @@ function App() {
     const rowl3 = document.querySelector('.rowl3');
     const rowl4 = document.querySelector('.rowl4');
     const rowl5 = document.querySelector('.rowl5');
-
+    const rowl6 = document.querySelector('.rowl6');
+    const rowl7 = document.querySelector('.rowl7');
     button.addEventListener('click', function(){
       rowl1.classList.add('animWork1');
         rowl2.classList.add('animWork2');
         rowl3.classList.add('animWork3');
         rowl4.classList.add('animWork4');
         rowl5.classList.add('animWork5');
+        rowl6.classList.add('animWork6');
         button.style.scale = "0";
         Animation.classList.add('indexMajor')
         setTimeout(disapear, 500);
@@ -49,7 +51,7 @@ function App() {
         rowl3.classList.remove('animWork3');
         rowl4.classList.remove('animWork4');
         rowl5.classList.remove('animWork5');
-        
+        rowl6.classList.remove('animWork6');
     }
     function indexation(){
       Animation.classList.remove('indexMajor')
@@ -174,7 +176,7 @@ function App() {
     scrollTrigger: {
       trigger: ".Dtext",
       start: "top 60",
-      end: '+=400',
+      end: '+=300',
       scrub:1
     },
     rotateX: -90
@@ -183,7 +185,7 @@ function App() {
     scrollTrigger: {
       trigger: ".Dtext",
       start: "top 80",
-      end: '+=500',
+      end: '+=300',
       scrub:1,
     },
     rotateX: -90
@@ -192,7 +194,7 @@ function App() {
     scrollTrigger: {
       trigger: ".Dtext",
       start: "top 100",
-      end: '+=500',
+      end: '+=300',
       scrub:1
     },
     rotateX: -90
@@ -201,7 +203,7 @@ function App() {
     scrollTrigger: {
       trigger: ".Dtext",
       start: "top 20",
-      end: '+=500',
+      end: '+=300',
       scrub:1
     },
     rotateX: -90
@@ -210,7 +212,7 @@ function App() {
     scrollTrigger: {
       trigger: ".Dtext",
       start: "top 40",
-      end: '+=500',
+      end: '+=300',
       scrub:1
     },
     rotateX: -90
@@ -219,7 +221,7 @@ function App() {
     scrollTrigger: {
       trigger: ".Dtext",
       start: "top 60",
-      end: '+=500',
+      end: '+=300',
       scrub:1
     },
     rotateX: -90
@@ -303,7 +305,6 @@ function App() {
     pos.x += diffX * speed;
     pos.y += diffY * speed;
     
-    const angle = getAngle(diffX, diffY);
     const squeeze = getSqueeze(diffX, diffY);
     const scale = 'scale(' + (1 + squeeze) + ', ' + (1 - squeeze) +')';
     const translate = 'translate3d(' + pos.x + 'px ,' + pos.y + 'px, 0)';
@@ -349,9 +350,9 @@ function App() {
     window.onscroll = function() {
         const currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
-            burger.style.right = "-13%";
+            burger.style.right = "-14.5%";
         } else {
-            burger.style.right = "-18%";
+            burger.style.right = "-19%";
         }
         prevScrollpos = currentScrollPos;
     }

@@ -15,8 +15,9 @@ const Flamingod = () => {
                     <h1>Flamingod</h1>
                     <div className='separator'></div>
                     <h2>Design des maquettes</h2>
-                    <h2>Intégration avec Structure Synfony / twig</h2>
-                    <h2>Mise en ligne</h2>                </div>
+                    <h2><span>Intégration avec Structure Synfony / twig</span></h2>
+                    <h2>Mise en ligne</h2>                
+                </div>
                 <div className="macFlamingod">
                     <img src={macFlamingod} alt="" />
                     <div className="circle"></div>
