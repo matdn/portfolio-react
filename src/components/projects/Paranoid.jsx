@@ -1,9 +1,8 @@
 import React from 'react'
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import '../../style.css';
 import {useEffect} from "react";
 import Parano from '../../assets/pictures/macParano.png'
+import ParanoR from '../../assets/pictures/pbresponsive.png'
 const Paranoid = () => {
     useEffect(() => {
         
@@ -20,7 +19,8 @@ const Paranoid = () => {
                     
                 </div>
                 <div className="macParano">
-                    <img src={Parano} alt="" />
+                    <img className="pb" src={Parano} alt="" />
+                    <img className="pbr" src={ParanoR} alt="" />
                     <div id="circle1" className="circle"></div>
                 </div>
            </div>

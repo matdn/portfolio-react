@@ -40,6 +40,12 @@ const Presentation = () => {
                 <p className='PhpMysql'>PHP - <span>MY SQL</span></p>
                 <p className='XdFigma'>XD - <span>FIGMA</span></p>
             </div>
+            <div className="Presentation__tech__responsive">
+                <p >REACT  <span>VUE JS</span></p>
+                <p >GSAP  <span>THREE </span></p>
+                <p>PHP  <span>MY SQL</span></p>
+                <p>XD  <span>FIGMA</span></p>
+            </div>
             <div className="Presentation__projects">
                 <div className="square"></div>
             </div>
