@@ -749,8 +749,10 @@ a{
     .Presentation__colorTransition{
         .menu{
             flex-direction: column-reverse;
+            z-index: 10;
             h2{
                 font-size: 10vh;
+                line-height: 70px;
             }
             nav{
                 font-size: 8vh;
@@ -779,7 +781,8 @@ a{
                 font-size: 5vh !important;
                 color: $clearColor !important;
                 -webkit-text-stroke: 0px !important;
-                font-weight: 900;
+                font-weight: 800;
+                letter-spacing: 0.5px;
             }
         }
         .Paranoid, .Axioma, .Flamingod, .Aubrac{
@@ -808,6 +811,7 @@ a{
             padding: 0!important;
             display: flex;
             justify-content: center;
+            margin-bottom: 60px;
             .separator{
                 width: 80%;
                 text-align: center !important;
@@ -872,6 +876,14 @@ a{
             img{
                 width: 80%;
             }
+        }
+    }
+    .spaceLetter{
+        margin-right: 20px;
+    }
+    .Flamingod{
+        h1{
+            font-size: 7.5vh !important;
         }
     }
 }
