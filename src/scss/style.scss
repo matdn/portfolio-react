@@ -815,7 +815,7 @@ a{
             align-items: center !important;
             padding: 0!important;
             display: flex;
-            justify-content: start;
+            justify-content: center;
             margin-bottom: 60px;
             .separator{
                 width: 80%;
@@ -890,5 +890,11 @@ a{
         h1{
             font-size: 7.5vh !important;
         }
+    }
+}
+@media screen and (max-width: 650px) {
+    .pbr, .axr, .fgr, .aur{
+        display: block !important;
+        height: 50vw !important;
     }
 }

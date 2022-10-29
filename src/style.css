@@ -695,7 +695,7 @@ a {
       align-items: center !important;
       padding: 0 !important;
       display: flex;
-      justify-content: start;
+      justify-content: center;
       margin-bottom: 60px; }
       .Presentation__project .Paranoid__display__text .separator, .Presentation__project .Axioma__display__text .separator, .Presentation__project .Flamingod__display__text .separator, .Presentation__project .Aubrac__display__text .separator {
         width: 80%;
@@ -756,5 +756,9 @@ a {
 
   .Flamingod h1 {
     font-size: 7.5vh !important; } }
+@media screen and (max-width: 650px) {
+  .pbr, .axr, .fgr, .aur {
+    display: block !important;
+    height: 50vw !important; } }
 
 /*# sourceMappingURL=style.css.map */
