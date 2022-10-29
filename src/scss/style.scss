@@ -296,7 +296,7 @@ html{
         }
     }
     &__profil{
-        height: 75vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -316,11 +316,12 @@ html{
             
         }
         .rowl1{
-            transform: rotate(-7deg) translateY(500px) translateX(1500px);
+            transform:  translateX(1500px);
 
         }
         .rowl2{
-            transform: rotate(7deg) translateY(400px) translateX(-2500px);
+            transform:  translateX(-2500px);
+            border-top: none;
         }
         &__text{
             width: 100%;

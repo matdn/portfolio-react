@@ -242,7 +242,7 @@ html {
         -webkit-text-stroke: 2px #16005b;
         color: transparent; }
   .Presentation__profil {
-    height: 75vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -260,9 +260,10 @@ html {
       padding: 2% 0;
       display: flex; }
     .Presentation__profil .rowl1 {
-      transform: rotate(-7deg) translateY(500px) translateX(1500px); }
+      transform: translateX(1500px); }
     .Presentation__profil .rowl2 {
-      transform: rotate(7deg) translateY(400px) translateX(-2500px); }
+      transform: translateX(-2500px);
+      border-top: none; }
     .Presentation__profil__text {
       width: 100%;
       height: 60%;
