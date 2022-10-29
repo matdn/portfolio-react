@@ -142,7 +142,7 @@ html {
       z-index: -2;
       transition: 2s; }
     .Animation__text div:nth-child(6) {
-      transform: rotate(0deg) translateY(-97vh) translateX(400vw);
+      transform: rotate(0deg) translateY(-105vh) translateX(400vw);
       z-index: -2;
       transition: 2s; }
     .Animation__text div span span {
@@ -158,7 +158,7 @@ html {
   .Animation .animWork5 {
     transform: rotate(35deg) translateY(-91%) translateX(-200px) !important; }
   .Animation .animWork6 {
-    transform: rotate(0deg) translateY(-97vh) translateX(-200px) !important; }
+    transform: rotate(0deg) translateY(-105vh) translateX(-200px) !important; }
 
 .burger {
   font-size: 18px;
