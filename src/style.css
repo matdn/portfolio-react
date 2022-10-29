@@ -285,7 +285,7 @@ html {
       width: 3000px;
       background-color: #16005b;
       position: absolute;
-      bottom: -80vh;
+      bottom: -65vh;
       left: 50%;
       transform: rotate(-10deg) translate(-50%, 0); }
     .Presentation__projects .square2 {
