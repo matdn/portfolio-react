@@ -713,8 +713,7 @@ a {
     display: none !important; }
 
   .pbr, .axr, .fgr, .aur {
-    display: block !important;
-    height: 28vh !important; }
+    display: block !important; }
 
   .Dtext {
     height: 80vh; }
