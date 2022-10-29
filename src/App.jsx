@@ -26,6 +26,7 @@ function App() {
     const rowl5 = document.querySelector('.rowl5');
     const rowl6 = document.querySelector('.rowl6');
     const rowl7 = document.querySelector('.rowl7');
+    const screenWidth = window.screen.width
     button.addEventListener('click', function(){
       rowl1.classList.add('animWork1');
         rowl2.classList.add('animWork2');
@@ -350,10 +351,19 @@ function App() {
     let prevScrollpos = window.pageYOffset;
       window.onscroll = function() {
         const currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
+        console.log(screenWidth)
+        if(screenWidth <= 1000){
+            if (prevScrollpos > currentScrollPos) {
+              burger.style.right = "-20%";
+          } else {
+              burger.style.right = "-26%";
+          }
+        }else{
+          if (prevScrollpos > currentScrollPos) {
             burger.style.right = "-11.5%";
-        } else {
-            burger.style.right = "-16%";
+          } else {
+              burger.style.right = "-16%";
+          }
         }
         prevScrollpos = currentScrollPos;
     }
