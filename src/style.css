@@ -665,11 +665,11 @@ a {
     .Presentation__project h1 {
       font-size: 6vh !important;
       line-height: 50px;
-      text-align: start; }
+      text-align: center; }
     .Presentation__project h2 {
       font-size: 5vh !important;
       line-height: 40px;
-      text-align: start; }
+      text-align: center; }
       .Presentation__project h2 .wowYouAreLostedInMyCode {
         font-size: 5vh !important;
         color: #16005b !important;
@@ -692,7 +692,7 @@ a {
       max-width: 90%;
       width: auto !important;
       flex-wrap: wrap;
-      align-items: start !important;
+      align-items: center !important;
       padding: 0 !important;
       display: flex;
       justify-content: start;
