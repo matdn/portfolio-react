@@ -623,7 +623,7 @@ a {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column; }
     .Presentation__tech__responsive p {
       text-align: left;
