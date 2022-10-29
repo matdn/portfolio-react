@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../style.css'
 import Gif from '../../assets/pictures/mrrobot.gif'
+
 const Footer = () => {
     return (
         <section className="Footer">
@@ -9,7 +10,6 @@ const Footer = () => {
                 <ul>
                    <a href="https://github.com/matdn"><li>Git</li></a> 
                    <a href="https://www.linkedin.com/in/matis-dene/"><li>Linkedin</li></a> 
-                   <a href="../../pdf/CV.pdf"><li><span>Mon CV</span></li></a> 
                 </ul>
            </nav>
            <div className='separator'></div>

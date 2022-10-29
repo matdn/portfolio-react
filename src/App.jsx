@@ -6,6 +6,7 @@ import Cursor from "./components/cursor/Cursor";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import {useEffect} from "react";
+
 function App() {
   useEffect(() => {
     const App = document.querySelector('.App');
@@ -347,15 +348,22 @@ function App() {
       cursorCircle.style.borderColor = "#16005b"
     })
     let prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
+      window.onscroll = function() {
         const currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
-            burger.style.right = "-14.5%";
+            burger.style.right = "-11.5%";
         } else {
-            burger.style.right = "-19%";
+            burger.style.right = "-16%";
         }
         prevScrollpos = currentScrollPos;
     }
+    function navPlacement(){
+        const screenWidth = window.screen.width
+        console.log(screenWidth)
+        const burgerWidth = 100
+        console.log(burgerWidth)
+    }
+    navPlacement();
 });
 
   return (

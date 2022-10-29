@@ -170,7 +170,7 @@ html {
   border-top: none;
   padding: 22px 60px;
   transform: rotate(90deg);
-  right: -14.5%;
+  right: -11.5%;
   position: fixed;
   z-index: 50;
   gap: 30px;
@@ -201,7 +201,7 @@ html {
     position: absolute; }
     .Presentation__cadre img {
       width: 180%;
-      opacity: 0.8; }
+      opacity: 0.6; }
   .Presentation__surText {
     font-family: 'poppins';
     font-size: 98px;
@@ -578,7 +578,7 @@ a {
 .pbr, .axr, .fgr, .aur {
   display: none !important; }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 475px) {
   .Cursor {
     display: none !important; }
 
@@ -661,11 +661,11 @@ a {
     .Presentation__project h1 {
       font-size: 8vh !important;
       line-height: 50px;
-      text-align: center; }
+      text-align: start; }
     .Presentation__project h2 {
       font-size: 6vh !important;
       line-height: 40px;
-      text-align: center; }
+      text-align: start; }
       .Presentation__project h2 .wowYouAreLostedInMyCode {
         font-size: 5vh !important;
         color: #16005b !important;
@@ -688,10 +688,10 @@ a {
       max-width: 90%;
       width: auto !important;
       flex-wrap: wrap;
-      align-items: center !important;
+      align-items: start !important;
       padding: 0 !important;
       display: flex;
-      justify-content: center;
+      justify-content: start;
       margin-bottom: 60px; }
       .Presentation__project .Paranoid__display__text .separator, .Presentation__project .Axioma__display__text .separator, .Presentation__project .Flamingod__display__text .separator, .Presentation__project .Aubrac__display__text .separator {
         width: 80%;
