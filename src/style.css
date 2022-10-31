@@ -257,7 +257,7 @@ html {
       font-weight: 900;
       text-transform: uppercase;
       border: solid 4px #16005b;
-      padding: 2% 0;
+      padding: 0 0;
       display: flex; }
     .Presentation__profil .rowl1 {
       transform: translateX(1500px); }
